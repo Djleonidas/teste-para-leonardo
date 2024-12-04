@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola do Futuro - Login e Cadastro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6C63FF, #3F3D56);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      color: #333;
+      text-align: center;
+    }
+    .container h1 {
+      color: #6C63FF;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #6C63FF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3F3D56;
+    }
+    .social-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .social-buttons button {
+      width: 48%;
+      background: #E94134;
+    }
+    .social-buttons button.facebook {
+      background: #3B5998;
+    }
+    .toggle {
+      margin-top: 10px;
+      color: #6C63FF;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Escola do Futuro</h1>
+    <h2 id="form-title">Login</h2>
+    <form id="auth-form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <input type="password" id="confirm-password" placeholder="Confirme a Senha" style="display: none;">
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="social-buttons">
+      <button id="google-btn">Google</button>
+      <button class="facebook" id="facebook-btn">Facebook</button>
+    </div>
+    <p class="toggle" id="toggle-form">Não tem uma conta? Cadastre-se</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
